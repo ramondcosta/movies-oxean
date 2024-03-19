@@ -25,19 +25,7 @@ class MoviesController < ApplicationController
   end
 
   def batch
-    puts "Batch!"
-    puts params
-    params.permit!
-    for movie in params[:movies]
-      puts "Movie!"
-      puts movie
-      @movie = Movie.new(movie)
-      puts "Movie Created!"
-      puts movie
-      @movie.save
-      puts "Movie Saved!"
-    end
-    puts "Batch!"
+    CreateMovieBatchJob.perform_async(params.to_json)
   end
 
   private
