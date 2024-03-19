@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   resources :user_movies, only: [:create, :update]
 
   post "/movies-batch", to: 'movies#batch'
+  post "/user-movies-batch", to: 'user_movies#batch'
 
   get '/login', to: 'sessions#new'
   delete '/logout', to: 'sessions#destroy'
