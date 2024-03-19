@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   post "/movies-batch", to: 'movies#batch'
   post "/user-movies-batch", to: 'user_movies#batch'
+  post "/job", to: 'user_movies#job'
 
   get '/login', to: 'sessions#new'
   delete '/logout', to: 'sessions#destroy'
