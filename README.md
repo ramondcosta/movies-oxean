@@ -45,3 +45,12 @@ E atribuir notas, em massa, para os filmes
 ![alt text](blob/image-2.png)
 
 ![alt text](blob/image-4.png)
+
+
+## Novas rotas e jobs
+
+Os arquvivos principais para se entender as alterações feitas são: 
+- movies_controller.rb
+- user_movies_controller.rb
+- batch_job.rb
+- create_movie_batch_job.rb
