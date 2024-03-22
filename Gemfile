@@ -69,3 +69,5 @@ group :test do
 end
 
 gem "sidekiq", "~> 7.2"
+
+gem "react-rails", "~> 3.2"
